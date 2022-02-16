@@ -42,7 +42,7 @@ function generateRandomDice() {
     if (playing) {
         const dice = (Math.floor(Math.random() * 6) + 1);
         diceEl.classList.remove('hidden');
-        diceEl.src = `dice-${dice}.png`;
+        diceEl.src = `./imgs/dice-${dice}.png`;
         if (dice !== 1) {
             currentScore += dice;
             document.getElementById(`current--${activePlayer}`).textContent = currentScore;
